@@ -1,14 +1,16 @@
-package Components;
+package MiscComponents;
+
+import com.sun.org.apache.xpath.internal.SourceTree;
 
 import java.io.File;
 import java.util.HashMap;
 import java.util.Random;
 import java.util.Vector;
 
-public class CandidateSolution {
+public class CandidateSolution implements Comparable<CandidateSolution> {
 
         public static final int PENALTY = 1000;
-        private Vector<CandidateAssignment> solutionList;
+        protected Vector<CandidateAssignment> solutionList;
         private Random rand;
 
 
@@ -24,6 +26,14 @@ public class CandidateSolution {
                 }
         }
 
+        public CandidateSolution(Vector<CandidateAssignment> givenSolutionList){
+                solutionList = givenSolutionList;
+        }
+
+        public CandidateSolution(){
+                solutionList = new Vector<>();
+                rand = new Random();
+        }
 
         /**
          * @param studentName the student who's assignment you want
@@ -51,16 +61,16 @@ public class CandidateSolution {
         public int getEnergy() {
                 int sumOfStudentEnergies = 0;
                 for (CandidateAssignment ca : solutionList) {
-                        sumOfStudentEnergies += ca.getEnergy();
+                        sumOfStudentEnergies += ca.getAssignmentEnergy();
                 }
 
                 int num_penalties = 0;
                 HashMap<String, String> assignedProjects = new HashMap<>();
                 for (CandidateAssignment ca : solutionList) {
-                        if (assignedProjects.get (ca.getAssignmentFor()) != null) {
+                        if (assignedProjects.get (ca.getAssignment()) != null) {
                                 num_penalties++;
                         } else {
-                                assignedProjects.put(ca.getAssignmentFor(), ca.getAssignmentFor());
+                                assignedProjects.put(ca.getAssignment(), ca.getAssignment());
                         }
                 }
                 return sumOfStudentEnergies + (num_penalties* PENALTY);
@@ -84,9 +94,17 @@ public class CandidateSolution {
 
       public static void main(String[] args) {
               CandidateSolution cs = new CandidateSolution(new PreferenceTable("data" + File.separator + "ProjectAllocationData.tsv"));
-
               System.out.println(cs.getEnergy());
               cs.getRandomAssignment().randomizeAssignment();
               System.out.println(cs.getEnergy());
       }
+
+        @Override
+        public int compareTo(CandidateSolution other) {
+              return Integer.compare(this.getFitness(), other.getFitness());
+        }
+
+        public Vector<CandidateAssignment> getSolutionList(){
+                return solutionList;
+        }
 }

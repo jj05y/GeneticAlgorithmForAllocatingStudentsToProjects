@@ -1,6 +1,4 @@
-package Components;
-
-import java.io.File;
+package MiscComponents;
 
 public class CandidateAssignment {
 
@@ -48,14 +46,14 @@ public class CandidateAssignment {
         /**
          * @return returns the assignment for this student
          */
-        public String getAssignmentFor() {
+        public String getAssignment() {
                 return assignment;
         }
 
         /**
          * @return the energy of the current assignment,,, or constant 1 if the student has a preassigned project
          */
-        public int getEnergy() {
+        public int getAssignmentEnergy() {
                 if (student.hasPreAssignedProject()) {
                         return 1;
                 } else {
@@ -79,10 +77,10 @@ public class CandidateAssignment {
                 CandidateAssignment ca = new CandidateAssignment(new PreferenceTable("data" + File.separator + "ProjectAllocationData.tsv").getRandomStudent());
 
                         System.out.print("Energy before randomization: ");
-                        System.out.println(ca.getEnergy());
+                        System.out.println(ca.getAssignmentEnergy());
                         ca.randomizeAssignment();
                         System.out.print("Energy after randomization: ");
-                        System.out.println(ca.getEnergy());
+                        System.out.println(ca.getAssignmentEnergy());
                         System.out.println();
 
         }*/

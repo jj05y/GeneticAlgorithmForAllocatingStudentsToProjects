@@ -1,4 +1,4 @@
-package Components;
+package MiscComponents;
 
 import java.util.Random;
 import java.util.Vector;

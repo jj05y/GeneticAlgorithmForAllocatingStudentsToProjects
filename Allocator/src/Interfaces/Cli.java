@@ -1,5 +1,9 @@
-package Components;
+package Interfaces;
 
+
+import Algorithms.AnnealingAlgorithm;
+import Algorithms.GeneticAlgorithm;
+import MiscComponents.PreferenceTable;
 
 import java.io.File;
 
@@ -7,8 +11,8 @@ public class Cli {
 
         public Cli(String filename) {
                 PreferenceTable prefs = new PreferenceTable(filename);
-                SimulatedAnnealingAlgorithm as = new SimulatedAnnealingAlgorithm(prefs);
-                GeneticAlgorithm gs = new GeneticAlgorithm(prefs);
+                AnnealingAlgorithm as = new AnnealingAlgorithm(prefs,1000,0.1);
+                GeneticAlgorithm gs = new GeneticAlgorithm(prefs, null);
                 as.go();
 
         }

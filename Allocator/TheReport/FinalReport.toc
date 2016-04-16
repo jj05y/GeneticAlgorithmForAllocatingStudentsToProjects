@@ -1,0 +1,29 @@
+\contentsline {section}{Introduction}{2}
+\contentsline {subsection}{Hi}{2}
+\contentsline {subsection}{Bye}{2}
+\contentsline {section}{What we produced/Interfaces}{3}
+\contentsline {subsection}{The Graphical User Interface}{3}
+\contentsline {subsection}{The Command Line Version}{3}
+\contentsline {subsection}{An individual and Complete Genetic Solution Command Line}{3}
+\contentsline {subsection}{An individual and Complete Annealed Solution Command Line}{3}
+\contentsline {section}{Performance Analysis}{4}
+\contentsline {subsection}{The Genetic Alogrithm}{4}
+\contentsline {subsection}{The Simulated Annealing alogrithms}{4}
+\contentsline {subsection}{The hybrid solution}{4}
+\contentsline {section}{Development Phases/Issues}{5}
+\contentsline {subsection}{The Genetic Algorithm}{5}
+\contentsline {subsection}{The Simulated Annealing Algorithm}{5}
+\contentsline {subsection}{The Gui}{5}
+\contentsline {section}{Our Development Model}{6}
+\contentsline {subsection}{Not sure what needs to go in here}{6}
+\contentsline {section}{Technical Details Of Note}{7}
+\contentsline {subsection}{Inheritance}{7}
+\contentsline {subsection}{Callback Listeners}{7}
+\contentsline {subsection}{Threads}{7}
+\contentsline {section}{Class Diagrams}{8}
+\contentsline {subsection}{Nice Pictures}{8}
+\contentsline {section}{The Team Night Out}{9}
+\contentsline {subsection}{Burgers}{9}
+\contentsline {subsection}{THE NIGHT MAN COMMETH}{9}
+\contentsline {section}{A Sad Day For Lamp}{10}
+\contentsline {subsection}{The loss of a team member}{10}
