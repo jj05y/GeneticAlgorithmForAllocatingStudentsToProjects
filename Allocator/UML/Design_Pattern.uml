@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>interfaces.Cli</OriginalElement>
+  <nodes>
+    <node x="-132.0" y="-174.0">interfaces.Gui</node>
+    <node x="-494.0" y="-13.0">interfaces.Cli</node>
+    <node x="-408.0" y="-144.0">listeners.CallBackListener</node>
+    <node x="-482.0" y="278.0">links.Link</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="interfaces.Cli" target="listeners.CallBackListener">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="interfaces.Gui" target="links.Link">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="links.Link" target="listeners.CallBackListener">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="interfaces.Cli" target="links.Link">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="interfaces.Gui" target="listeners.CallBackListener">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.9175257731958762" x="-67.0" y="204.0" />
+  <SelectedNodes>
+    <node>interfaces.Cli</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+    <Category>Constructors</Category>
+  </Categories>
+  <SCOPE>Project Files</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
