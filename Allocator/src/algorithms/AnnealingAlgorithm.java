@@ -1,26 +1,24 @@
 package algorithms;
 
 
-import interfaces.Gui;
-import listeners.CallBackListener;
+import interfaces.LampGui;
+import listeners.InterfaceCallBackListener;
 import mappings.CandidateAssignment;
 import mappings.CandidateSolution;
 import student.details.PreferenceTable;
 
 import java.util.Random;
 
-import static java.lang.Math.pow;
-
 public class AnnealingAlgorithm {
 
         private CandidateSolution currentSolution;
         private CandidateAssignment temp;
-        private CallBackListener callBackListener;
+        private InterfaceCallBackListener callBackListener;
         private double temperature;
         private double coolAmount;
         private boolean statusSuppressed;
 
-        public AnnealingAlgorithm(PreferenceTable pt, int initialTemperature, double decrementAmount, CallBackListener cbl, boolean suppressed){
+        public AnnealingAlgorithm(PreferenceTable pt, int initialTemperature, double decrementAmount, InterfaceCallBackListener cbl, boolean suppressed){
                 temperature = initialTemperature;
                 coolAmount = decrementAmount;
                 callBackListener = cbl;
@@ -34,7 +32,7 @@ public class AnnealingAlgorithm {
                 }
                 int energy = currentSolution.getEnergy();
                 int newEnergy;
-                int update = ((int) (temperature/coolAmount)) / Gui.PROG_BAR_SIZE;
+                int update = ((int) (temperature/coolAmount)) / LampGui.PROG_BAR_SIZE;
                 int noOfCycles = 0;
                 Random rnd = new Random();
 
@@ -53,8 +51,9 @@ public class AnnealingAlgorithm {
                         }
 
                         temperature -= coolAmount; //decrease temperature with each iteration
-                        if (!statusSuppressed){
-                                if (noOfCycles%update==0 && noOfCycles/ update < Gui.PROG_BAR_SIZE) {
+
+                        if (!statusSuppressed && update!=0){
+                                if (noOfCycles%update==0 && noOfCycles/ update < LampGui.PROG_BAR_SIZE) {
                                         callBackListener.updateProgressBar(noOfCycles / update);
                                 }
                         }

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.2.5)  24 APR 2016 16:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.2.5)  28 APR 2016 13:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -556,119 +556,237 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 \tf@toc=\write4
 \openout4 = `FinalReport.toc'.
 
- [1] [2] [3]
-<Gui.png, id=24, 624.3325pt x 744.7825pt>
-File: Gui.png Graphic file (type png)
- <use Gui.png>
-Package pdftex.def Info: Gui.png used on input line 249.
-(pdftex.def)             Requested size: 357.0112pt x 425.89417pt.
- [4 <./Gui.png (PNG copy)>] <Cli-Annealing.png, id=28, 846.16125pt x 838.13126p
-t>
-File: Cli-Annealing.png Graphic file (type png)
-
-<use Cli-Annealing.png>
-Package pdftex.def Info: Cli-Annealing.png used on input line 256.
-(pdftex.def)             Requested size: 465.06001pt x 460.64111pt.
- [5 <./Cli-Annealing.png (PNG copy)>]
-<Cli-Genetic.png, id=32, 873.2625pt x 1022.82124pt>
-File: Cli-Genetic.png Graphic file (type png)
- <use Cli-Genetic.png>
-Package pdftex.def Info: Cli-Genetic.png used on input line 263.
-(pdftex.def)             Requested size: 465.06001pt x 544.71465pt.
-
-[6 <./Cli-Genetic.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 270--273
+ [1]
+Underfull \hbox (badness 10000) in paragraph at lines 198--207
 
  []
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 277.
+
+Underfull \hbox (badness 10000) in paragraph at lines 198--207
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 198--207
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 198--207
+
+ []
+
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 225--228
+
+ []
+
+<egout.png, id=21, 697.60625pt x 372.39125pt>
+File: egout.png Graphic file (type png)
+ <use egout.png>
+Package pdftex.def Info: egout.png used on input line 232.
+(pdftex.def)             Requested size: 432.17372pt x 230.69835pt.
+ [3 <./egout.png>] <SimpleGui.png, id=28, 556.0775pt x 152.57pt>
+File: SimpleGui.png Graphic file (type png)
+ <use SimpleGui.png>
+Package pdftex.def Info: SimpleGui.png used on input line 240.
+(pdftex.def)             Requested size: 328.82706pt x 90.22038pt.
+
+<helpString.png, id=29, 700.6175pt x 420.57124pt>
+File: helpString.png Graphic file (type png)
+ <use helpString.png>
+Package pdftex.def Info: helpString.png used on input line 249.
+(pdftex.def)             Requested size: 399.2946pt x 239.69601pt.
+ [4 <./SimpleGui.png> <./helpString.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 253--255
+
+ []
+
+<CliGa.png, id=33, 769.87625pt x 416.55624pt>
+File: CliGa.png Graphic file (type png)
+ <use CliGa.png>
+Package pdftex.def Info: CliGa.png used on input line 257.
+(pdftex.def)             Requested size: 446.2658pt x 241.4693pt.
+
+<CliSa.png, id=34, 770.88pt x 412.54124pt>
+File: CliSa.png Graphic file (type png)
+ <use CliSa.png>
+Package pdftex.def Info: CliSa.png used on input line 262.
+(pdftex.def)             Requested size: 446.2658pt x 238.82086pt.
+ [5 <./CliGa.png> <./CliSa.png>] <Gui.png, id=38, 741.77126pt x 808.01875pt>
+File: Gui.png Graphic file (type png)
+ <use Gui.png>
+Package pdftex.def Info: Gui.png used on input line 284.
+(pdftex.def)             Requested size: 465.06001pt x 506.60097pt.
+ [6 <./Gui.png (PNG copy)>] <Cli-Annealing.png, id=43, 789.95125pt x 728.7225pt
+>
+File: Cli-Annealing.png Graphic file (type png)
+
+<use Cli-Annealing.png>
+Package pdftex.def Info: Cli-Annealing.png used on input line 292.
+(pdftex.def)             Requested size: 465.06001pt x 429.01964pt.
+ [7 <./Cli-Annealing.png (PNG copy)>]
+<Cli-Genetic.png, id=47, 811.03pt x 955.57pt>
+File: Cli-Genetic.png Graphic file (type png)
+ <use Cli-Genetic.png>
+Package pdftex.def Info: Cli-Genetic.png used on input line 301.
+(pdftex.def)             Requested size: 465.06001pt x 547.94667pt.
+ [8 <./Cli-Genetic.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 308--311
+
+ []
+
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 315.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 277.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 315.
 
-<GaPerf.png, id=37, 805.0075pt x 527.9725pt>
+<GaPerf.png, id=51, 824.07875pt x 512.91624pt>
 File: GaPerf.png Graphic file (type png)
  <use GaPerf.png>
-Package pdftex.def Info: GaPerf.png used on input line 284.
-(pdftex.def)             Requested size: 422.77661pt x 277.27832pt.
- [7 <./GaPerf.png>] <SaPerf.png, id=42, 864.22874pt x 565.11125pt>
+Package pdftex.def Info: GaPerf.png used on input line 322.
+(pdftex.def)             Requested size: 422.77661pt x 263.14128pt.
+ [9 <./GaPerf.png>] <SaPerf.png, id=56, 864.22874pt x 565.11125pt>
 File: SaPerf.png Graphic file (type png)
  <use SaPerf.png>
-Package pdftex.def Info: SaPerf.png used on input line 305.
+Package pdftex.def Info: SaPerf.png used on input line 343.
 (pdftex.def)             Requested size: 422.77661pt x 276.44992pt.
- [8 <./SaPerf.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 327--335
+ [10 <./SaPerf.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 355--356
 
  []
 
-<ComplexGui.png, id=46, 562.1pt x 222.8325pt>
-File: ComplexGui.png Graphic file (type png)
- <use ComplexGui.png>
-Package pdftex.def Info: ComplexGui.png used on input line 344.
-(pdftex.def)             Requested size: 403.98956pt x 160.15366pt.
- [9 <./ComplexGui.png>] [10] <DesignPattern.png, id=53, 251.94125pt x 307.1475p
-t>
-File: DesignPattern.png Graphic file (type png)
+<HyPerf.png, id=60, 864.22874pt x 565.11125pt>
+File: HyPerf.png Graphic file (type png)
+ <use HyPerf.png>
+Package pdftex.def Info: HyPerf.png used on input line 367.
+(pdftex.def)             Requested size: 422.77661pt x 276.44992pt.
+ [11 <./HyPerf.png>] <PerfComp.png, id=64, 864.22874pt x 565.11125pt>
+File: PerfComp.png Graphic file (type png)
+ <use PerfComp.png>
+Package pdftex.def Info: PerfComp.png used on input line 386.
+(pdftex.def)             Requested size: 422.77661pt x 276.44992pt.
 
-<use DesignPattern.png>
-Package pdftex.def Info: DesignPattern.png used on input line 382.
+[12 <./PerfComp.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 419--420
+
+ []
+
+<crapDesign.png, id=69, 419.5675pt x 227.85126pt>
+File: crapDesign.png Graphic file (type png)
+ <use crapDesign.png>
+Package pdftex.def Info: crapDesign.png used on input line 423.
+(pdftex.def)             Requested size: 211.3883pt x 114.798pt.
+
+<DesignPattern.png, id=70, 251.94125pt x 307.1475pt>
+File: DesignPattern.png Graphic file (type png)
+ <use DesignPattern.png>
+Package pdftex.def Info: DesignPattern.png used on input line 424.
 (pdftex.def)             Requested size: 126.83585pt x 154.62787pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 388--390
+Underfull \hbox (badness 10000) in paragraph at lines 432--433
 
  []
 
-[11 <./DesignPattern.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 403--406
+[13 <./crapDesign.png (PNG copy)> <./DesignPattern.png (PNG copy)>] [14]
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ™ in font cmr10!
+
+Underfull \hbox (badness 10000) in paragraph at lines 521--522
 
  []
 
-<Inheritance.png, id=57, 538.01pt x 359.3425pt>
+[15]
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ˜ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ™ in font cmr10!
+
+Underfull \hbox (badness 10000) in paragraph at lines 548--549
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 556--558
+
+ []
+
+[16] <ComplexGui.png, id=88, 562.1pt x 222.8325pt>
+File: ComplexGui.png Graphic file (type png)
+ <use ComplexGui.png>
+Package pdftex.def Info: ComplexGui.png used on input line 560.
+(pdftex.def)             Requested size: 357.0112pt x 141.52766pt.
+
+[17 <./ComplexGui.png>] [18]
+File: DesignPattern.png Graphic file (type png)
+ <use DesignPattern.png>
+Package pdftex.def Info: DesignPattern.png used on input line 607.
+(pdftex.def)             Requested size: 126.83585pt x 154.62787pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 613--615
+
+ []
+
+[19]
+Underfull \hbox (badness 10000) in paragraph at lines 628--631
+
+ []
+
+<Inheritance.png, id=99, 538.01pt x 359.3425pt>
 File: Inheritance.png Graphic file (type png)
  <use Inheritance.png>
-Package pdftex.def Info: Inheritance.png used on input line 407.
+Package pdftex.def Info: Inheritance.png used on input line 632.
 (pdftex.def)             Requested size: 281.85585pt x 188.25735pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 413--418
+Underfull \hbox (badness 10000) in paragraph at lines 638--643
 
  []
 
-[12 <./Inheritance.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 432--435
+[20 <./Inheritance.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 657--660
 
  []
 
-[13] <obituary.png, id=65, 371.3875pt x 303.1325pt>
+[21] <obituary.png, id=106, 371.3875pt x 303.1325pt>
 File: obituary.png Graphic file (type png)
  <use obituary.png>
-Package pdftex.def Info: obituary.png used on input line 492.
+Package pdftex.def Info: obituary.png used on input line 717.
 (pdftex.def)             Requested size: 216.09044pt x 176.38127pt.
 
 
 AED: lastpage setting LastPage
-[14 <./obituary.png>] (./FinalReport.aux) ) 
+[22 <./obituary.png>] (./FinalReport.aux) ) 
 Here is how much of TeX's memory you used:
- 14818 strings out of 495000
- 304797 string characters out of 6181170
+ 14860 strings out of 495000
+ 305420 string characters out of 6181170
  365562 words of memory out of 5000000
- 17761 multiletter control sequences out of 15000+600000
- 8848 words of font info for 31 fonts, out of 8000000 for 9000
+ 17794 multiletter control sequences out of 15000+600000
+ 9194 words of font info for 32 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 62i,11n,65p,703b,342s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,12n,65p,703b,345s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts
 /type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1
 /public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.p
-fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on FinalReport.pdf (15 pages, 592964 bytes).
+c/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmti12.pfb>
+Output written on FinalReport.pdf (23 pages, 944370 bytes).
 PDF statistics:
- 93 PDF objects out of 1000 (max. 8388607)
- 59 compressed objects within 1 object stream
+ 152 PDF objects out of 1000 (max. 8388607)
+ 95 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 58 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 98 words of extra memory for PDF output out of 10000 (max. 10000000)
 

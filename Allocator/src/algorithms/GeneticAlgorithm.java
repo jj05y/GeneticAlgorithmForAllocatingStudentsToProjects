@@ -1,7 +1,7 @@
 package algorithms;
 
-import interfaces.Gui;
-import listeners.CallBackListener;
+import interfaces.LampGui;
+import listeners.InterfaceCallBackListener;
 import mappings.CandidateAssignment;
 import mappings.CandidateSolution;
 import mappings.ChildCandidateSolution;
@@ -18,39 +18,34 @@ import java.util.Collections;
 
 public class GeneticAlgorithm {
 
-        private static final int INITIAL_TEMPERATURE = 3000;
-        private static final double DECREMENT_AMOUNT = 0.5;
+
         private ArrayList<CandidateSolution> population;
-        private CallBackListener callBackListener;
+        private InterfaceCallBackListener callBackListener;
         private int numGenerations;
         private int populationSize;
         private int topN;
 
-        public GeneticAlgorithm(PreferenceTable preferenceTable, CallBackListener cbl,
-                                int numGen, int top, int popSize, Boolean annealedPop){
+        public GeneticAlgorithm(InterfaceCallBackListener cbl,
+                                int numGen, int top, int popSize){
                 callBackListener = cbl;
                 populationSize = popSize;
                 numGenerations = numGen;
                 topN = top;
-
-                population = new ArrayList<CandidateSolution>();
-                generatePopulation(preferenceTable, annealedPop);
         }
 
-        private void generatePopulation(PreferenceTable preferenceTable, Boolean annealedPop) {
-                int updateEvery = populationSize / Gui.PROG_BAR_SIZE;
+        private void generatePopulation(PreferenceTable preferenceTable, Boolean annealedPop, int initialTemp, double decrementAmount) {
+                population = new ArrayList<CandidateSolution>();
+                int updateEvery = populationSize / LampGui.PROG_BAR_SIZE;
                 AnnealingAlgorithm aa;
-
-                callBackListener.setStatus("Creating Population");
 
                 for (int i = 0;i < populationSize;i++) {
                         if(annealedPop){
-                                aa = new AnnealingAlgorithm(preferenceTable, INITIAL_TEMPERATURE, DECREMENT_AMOUNT, callBackListener, true);
+                                aa = new AnnealingAlgorithm(preferenceTable, initialTemp, decrementAmount, callBackListener, true);
                                 population.add(aa.go());
                         }else {
                                 population.add(new CandidateSolution(preferenceTable));
                         }
-                        if (i%updateEvery==0 && i/ updateEvery < Gui.PROG_BAR_SIZE) {
+                        if (i%updateEvery==0 && i/ updateEvery < LampGui.PROG_BAR_SIZE) {
                                 callBackListener.updateProgressBar(i / updateEvery);
                         }
                 }
@@ -100,14 +95,31 @@ public class GeneticAlgorithm {
                 return children;
         }
 
-        public CandidateSolution runAlgorithm(){
+        public CandidateSolution runAlgorithmWithAnnealedPopulation(PreferenceTable prefs, int initialTemp, double decrementAmount){
+
+                callBackListener.setStatus("Creating Population");
+                generatePopulation(prefs, true, initialTemp, decrementAmount);
+
+                return runAlgorithm();
+        }
+        public CandidateSolution runAlgorithmWithRandomPopulation(PreferenceTable prefs) {
+
+                callBackListener.setStatus("Creating Population");
+                generatePopulation(prefs, false, 0, 0);
+
+                return runAlgorithm();
+        }
+
+        private CandidateSolution runAlgorithm(){
 
                 ArrayList<CandidateSolution> children;
 
                 //used to know when to update progress bar
-                int updateEveryN = numGenerations / Gui.PROG_BAR_SIZE;
-                callBackListener.setStatus("Let the genetics Begin");
+                int updateEveryN = numGenerations / LampGui.PROG_BAR_SIZE;
 
+
+
+                callBackListener.setStatus("Genetic Algorithm Running");
                 for(int i = 0; i< numGenerations; i++) {
 
                         //getkids
@@ -117,12 +129,14 @@ public class GeneticAlgorithm {
                         //addkids
                         population.addAll(children);
 
-                        if (i%updateEveryN==0 && i/updateEveryN < Gui.PROG_BAR_SIZE) {
+                        if (i%updateEveryN==0 && i/updateEveryN < LampGui.PROG_BAR_SIZE) {
                                 callBackListener.updateProgressBar(i / updateEveryN);
                         }
                 }
-
                 Collections.sort(population);
-                return population.get(population.size()-1);
+                CandidateSolution bestSolution = population.get(populationSize-1);
+                callBackListener.resetProgressBar();
+                callBackListener.setStatus("Solution created with energy of " + bestSolution.getEnergy());
+                return bestSolution;
         }
 }

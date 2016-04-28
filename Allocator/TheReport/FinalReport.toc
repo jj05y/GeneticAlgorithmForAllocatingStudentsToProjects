@@ -1,30 +1,35 @@
-\contentsline {section}{Introduction (Spec of project)}{2}
-\contentsline {section}{What we produced/interfaces}{3}
-\contentsline {subsection}{The Graphical User Interface}{3}
-\contentsline {subsection}{The Command Line Version}{3}
-\contentsline {section}{Class Diagrams}{4}
-\contentsline {subsection}{The Gui with Simulated Annealing and the Genetic Algorithm}{4}
-\contentsline {subsection}{Cli for Simulated Annealing}{5}
-\contentsline {subsection}{Cli for the Genetic Algorithm}{6}
-\contentsline {section}{Performance Analysis}{7}
-\contentsline {subsection}{The Genetic Alogrithm}{7}
-\contentsline {subsection}{The Simulated Annealing alogrithms}{8}
-\contentsline {section}{Development Phases/Issues}{9}
-\contentsline {subsection}{The Genetic Algorithm}{9}
-\contentsline {subsection}{The Simulated Annealing Algorithm}{9}
-\contentsline {subsection}{The Gui}{9}
-\contentsline {section}{Our Development Model}{10}
-\contentsline {subsection}{Not sure what needs to go in here}{10}
-\contentsline {section}{Technical Details Of Note}{11}
-\contentsline {subsection}{Our Design Pattern}{11}
-\contentsline {subsection}{Callback listeners}{11}
-\contentsline {subsection}{Inheritance}{12}
-\contentsline {subsection}{Threads}{12}
-\contentsline {section}{Team Development}{13}
-\contentsline {subsection}{What went well}{13}
-\contentsline {subsection}{What didn't go so well}{13}
-\contentsline {subsection}{Who did what}{13}
-\contentsline {section}{The Team Night Out}{14}
-\contentsline {subsection}{Burgers and Drama}{14}
-\contentsline {section}{A Sad Day For Lamp}{14}
-\contentsline {subsection}{The loss of a team member}{14}
+\contentsline {section}{Introduction}{2}
+\contentsline {section}{What we produced}{3}
+\contentsline {subsection}{Overview}{3}
+\contentsline {subsection}{The Graphical User Interface}{4}
+\contentsline {subsection}{The Command Line Version}{4}
+\contentsline {section}{Class Diagrams}{6}
+\contentsline {subsection}{The Gui with Simulated Annealing and the Genetic Algorithm}{6}
+\contentsline {subsection}{Cli for Simulated Annealing}{7}
+\contentsline {subsection}{Cli for the Genetic Algorithm}{8}
+\contentsline {section}{Performance Analysis}{9}
+\contentsline {subsection}{The Genetic Alogrithm}{9}
+\contentsline {subsection}{The Simulated Annealing alogrithm}{10}
+\contentsline {subsection}{The Hybrid Algorithm}{11}
+\contentsline {subsection}{Comparing the Three Algorithms}{12}
+\contentsline {section}{Development Phases/Issues}{13}
+\contentsline {subsection}{The Design Pattern}{13}
+\contentsline {subsection}{The Genetic Algorithm}{14}
+\contentsline {subsection}{The Simulated Annealing Algorithm}{16}
+\contentsline {subsection}{The Interfaces}{17}
+\contentsline {subsection}{Development Cycle Conclusion}{17}
+\contentsline {section}{Our Development Model}{18}
+\contentsline {subsection}{Not sure what needs to go in here}{18}
+\contentsline {section}{Technical Details Of Note}{19}
+\contentsline {subsection}{Our Design Pattern}{19}
+\contentsline {subsection}{Callback listeners}{19}
+\contentsline {subsection}{Inheritance}{20}
+\contentsline {subsection}{Threads}{20}
+\contentsline {section}{Team Development}{21}
+\contentsline {subsection}{What went well}{21}
+\contentsline {subsection}{What didn't go so well}{21}
+\contentsline {subsection}{Who did what}{21}
+\contentsline {section}{The Team Night Out}{22}
+\contentsline {subsection}{Burgers and Drama}{22}
+\contentsline {section}{A Sad Day For Lamp}{22}
+\contentsline {subsection}{The loss of a team member}{22}
